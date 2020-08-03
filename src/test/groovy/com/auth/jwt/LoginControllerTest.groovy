@@ -43,11 +43,5 @@ class LoginControllerTest extends Specification {
         )
         .andExpect(MockMvcResultMatchers.status().isOk())
 
-
-        mvc.perform(get("/hello"))
-                .andExpect(MockMvcResultMatchers.status().isOk())
-                .andReturn()
-                .response
-                .contentAsString == "Hello world!"
     }
 }

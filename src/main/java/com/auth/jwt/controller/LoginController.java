@@ -15,11 +15,6 @@ import java.util.Date;
 @RestController
 public class LoginController {
 
-    @GetMapping("hello")
-    public String salutation() {
-        return "Hello world!";
-    }
-
     @PostMapping("usertoken")
     public User login(@RequestParam("user") String username, @RequestParam("password") String pwd) {
 
